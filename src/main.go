@@ -7,7 +7,7 @@ import (
 
 func main() {
 	
-	crawler.Crawler()
-	fmt.Printf("hello, world\n")
-	
+	rawHTML := crawler.FetchHTML("http://google.com")
+	fmt.Printf(string(rawHTML) + "\n")
+
 }
